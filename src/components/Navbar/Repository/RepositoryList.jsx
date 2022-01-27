@@ -1,4 +1,4 @@
-// import Repository from "./Repository";
+import "./RepositoryList.css";
 
 export default function RepositoryList({ repos }) {
   console.log(repos);
@@ -6,7 +6,7 @@ export default function RepositoryList({ repos }) {
     <div>
       <h2>Repositories:</h2>
       {repos.map((repo) => (
-        <div key={repo.id}>
+        <div className="divovi" key={repo.id}>
           <p>{repo.name}</p>
         </div>
       ))}
