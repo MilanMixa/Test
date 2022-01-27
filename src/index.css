@@ -1,13 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* base styles */
 body {
+  font-family: Poppins, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.1em;
+  background: #f4f4f4;
+  box-sizing: border-box;
+}
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* layout */
+.page-title {
+  font-size: 1em;
+  color: #444;
+  display: inline-block;
+}
+.btn {
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #212529;
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid #212529;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #212529;
+}
+
+/* forms */
+label {
+  display: block;
+  margin: 24px auto;
+}
+label span {
+  display: block;
+  margin-bottom: 6px;
+}
+input,
+textarea,
+select {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: #777;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+textarea {
+  min-height: 160px;
+}
+.error {
+  color: red;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 10px 0;
 }
