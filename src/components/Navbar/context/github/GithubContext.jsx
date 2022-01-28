@@ -4,7 +4,7 @@ import githubReducer from "./GithubReducer";
 const GithubContext = createContext();
 
 const url = "https://api.github.com";
-const TOKEN = "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";
+const TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 
 export const GithubProvider = ({ children }) => {
   const initialState = {
