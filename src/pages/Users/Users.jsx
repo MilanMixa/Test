@@ -9,7 +9,7 @@ export default function Users() {
   const { users, loading } = useContext(GithubContext);
 
   return (
-    <div className="milan">
+    <div className="main-div">
       {loading && <div>Loading...</div>}
       {users && users.map((user) => <SingleUser key={user.id} user={user} />)}
     </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./SearchUser.css";
 
 export default function SearchUser({ user }) {
-  console.log(user);
+  // console.log(user);
 
   return (
     <div className="container">

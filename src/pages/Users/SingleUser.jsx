@@ -10,7 +10,7 @@ function SingleUser() {
     useContext(GithubContext);
 
   const params = useParams();
-  console.log(user);
+  // console.log(user);
 
   useEffect(() => {
     getSingleUser(params.login);
@@ -19,7 +19,6 @@ function SingleUser() {
 
   const {
     name,
-    type,
     email,
     location,
     company,
@@ -39,10 +38,6 @@ function SingleUser() {
 
   return (
     <div className="main">
-      {/* <Link to="/">
-        <button className="btn">Back To Search</button>
-      </Link> */}
-
       <div className="info">
         <div className="left">
           <img src={avatar_url} alt="avatar" />
